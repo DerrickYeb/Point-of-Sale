@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAddStock = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnAddStock = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -45,19 +46,6 @@
             this.panel1.Size = new System.Drawing.Size(1124, 670);
             this.panel1.TabIndex = 0;
             // 
-            // btnAddStock
-            // 
-            this.btnAddStock.BackColor = System.Drawing.Color.DarkCyan;
-            this.btnAddStock.FlatAppearance.BorderSize = 0;
-            this.btnAddStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddStock.ForeColor = System.Drawing.Color.White;
-            this.btnAddStock.Location = new System.Drawing.Point(1004, 12);
-            this.btnAddStock.Name = "btnAddStock";
-            this.btnAddStock.Size = new System.Drawing.Size(83, 37);
-            this.btnAddStock.TabIndex = 1;
-            this.btnAddStock.Text = "+";
-            this.btnAddStock.UseVisualStyleBackColor = false;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(59)))), ((int)(((byte)(76)))));
@@ -70,12 +58,40 @@
             this.dataGridView1.Size = new System.Drawing.Size(1124, 670);
             this.dataGridView1.TabIndex = 0;
             // 
+            // btnAddStock
+            // 
+            this.btnAddStock.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnAddStock.FlatAppearance.BorderSize = 0;
+            this.btnAddStock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddStock.ForeColor = System.Drawing.Color.White;
+            this.btnAddStock.Location = new System.Drawing.Point(950, 15);
+            this.btnAddStock.Name = "btnAddStock";
+            this.btnAddStock.Size = new System.Drawing.Size(83, 37);
+            this.btnAddStock.TabIndex = 1;
+            this.btnAddStock.Text = "+";
+            this.btnAddStock.UseVisualStyleBackColor = false;
+            this.btnAddStock.Click += new System.EventHandler(this.btnAddStock_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.ForeColor = System.Drawing.Color.Transparent;
+            this.btnClose.Location = new System.Drawing.Point(1063, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(49, 40);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Expenses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(1124, 735);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnAddStock);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -92,5 +108,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAddStock;
+        private System.Windows.Forms.Button btnClose;
     }
 }

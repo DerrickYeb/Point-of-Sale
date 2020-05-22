@@ -16,5 +16,17 @@ namespace PointSale.Views
         {
             InitializeComponent();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAddStock_Click(object sender, EventArgs e)
+        {
+            var stock = new Stock();
+            stock.ShowDialog();
+
+        }
     }
 }

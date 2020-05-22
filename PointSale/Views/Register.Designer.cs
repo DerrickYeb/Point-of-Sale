@@ -53,10 +53,11 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(194, 180);
+            this.txtUsername.Location = new System.Drawing.Point(216, 180);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(249, 30);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // label2
             // 
@@ -71,7 +72,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(194, 219);
+            this.txtPassword.Location = new System.Drawing.Point(216, 219);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(249, 30);
             this.txtPassword.TabIndex = 1;
@@ -92,14 +93,14 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(34, 267);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 25);
+            this.label4.Size = new System.Drawing.Size(171, 25);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Contact";
+            this.label4.Text = "Confirm Password";
             // 
             // txtConfrimPassword
             // 
             this.txtConfrimPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfrimPassword.Location = new System.Drawing.Point(194, 267);
+            this.txtConfrimPassword.Location = new System.Drawing.Point(216, 267);
             this.txtConfrimPassword.Name = "txtConfrimPassword";
             this.txtConfrimPassword.Size = new System.Drawing.Size(249, 30);
             this.txtConfrimPassword.TabIndex = 1;
@@ -111,7 +112,7 @@
             this.comboRole.Items.AddRange(new object[] {
             "Admin",
             "User"});
-            this.comboRole.Location = new System.Drawing.Point(194, 312);
+            this.comboRole.Location = new System.Drawing.Point(216, 312);
             this.comboRole.Name = "comboRole";
             this.comboRole.Size = new System.Drawing.Size(249, 33);
             this.comboRole.TabIndex = 2;
@@ -141,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 474);
+            this.ClientSize = new System.Drawing.Size(501, 482);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.comboRole);
             this.Controls.Add(this.txtConfrimPassword);

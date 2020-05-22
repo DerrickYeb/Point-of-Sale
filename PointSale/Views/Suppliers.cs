@@ -16,5 +16,16 @@ namespace PointSale.Views
         {
             InitializeComponent();
         }
+
+        private void btnAddSupplier_Click(object sender, EventArgs e)
+        {
+            var addSupplier = new AddSupplier();
+            addSupplier.ShowDialog();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

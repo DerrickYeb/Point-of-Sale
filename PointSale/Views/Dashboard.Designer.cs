@@ -31,7 +31,7 @@
             this.btnPos = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnSales = new System.Windows.Forms.Button();
             this.btnSuppliers = new System.Windows.Forms.Button();
             this.btnExpenses = new System.Windows.Forms.Button();
             this.lblDate = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.btnPos.TabIndex = 0;
             this.btnPos.Text = "POS";
             this.btnPos.UseVisualStyleBackColor = false;
+            this.btnPos.Click += new System.EventHandler(this.btnPos_Click);
             // 
             // btnProducts
             // 
@@ -66,6 +67,7 @@
             this.btnProducts.TabIndex = 0;
             this.btnProducts.Text = "Products";
             this.btnProducts.UseVisualStyleBackColor = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // btnStock
             // 
@@ -80,20 +82,22 @@
             this.btnStock.TabIndex = 0;
             this.btnStock.Text = "Stock";
             this.btnStock.UseVisualStyleBackColor = false;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
-            // button4
+            // btnSales
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(183)))), ((int)(((byte)(144)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(210)))), ((int)(((byte)(218)))));
-            this.button4.Location = new System.Drawing.Point(75, 333);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(247, 127);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Sales";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(183)))), ((int)(((byte)(144)))));
+            this.btnSales.FlatAppearance.BorderSize = 0;
+            this.btnSales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSales.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(210)))), ((int)(((byte)(218)))));
+            this.btnSales.Location = new System.Drawing.Point(75, 333);
+            this.btnSales.Name = "btnSales";
+            this.btnSales.Size = new System.Drawing.Size(247, 127);
+            this.btnSales.TabIndex = 0;
+            this.btnSales.Text = "Sales";
+            this.btnSales.UseVisualStyleBackColor = false;
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
             // 
             // btnSuppliers
             // 
@@ -108,6 +112,7 @@
             this.btnSuppliers.TabIndex = 0;
             this.btnSuppliers.Text = "Suppliers";
             this.btnSuppliers.UseVisualStyleBackColor = false;
+            this.btnSuppliers.Click += new System.EventHandler(this.btnSuppliers_Click);
             // 
             // btnExpenses
             // 
@@ -122,6 +127,7 @@
             this.btnExpenses.TabIndex = 0;
             this.btnExpenses.Text = "Expenses";
             this.btnExpenses.UseVisualStyleBackColor = false;
+            this.btnExpenses.Click += new System.EventHandler(this.btnExpenses_Click);
             // 
             // lblDate
             // 
@@ -169,7 +175,7 @@
             this.Controls.Add(this.btnExpenses);
             this.Controls.Add(this.btnSuppliers);
             this.Controls.Add(this.btnStock);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnSales);
             this.Controls.Add(this.btnProducts);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.btnPos);
@@ -185,7 +191,7 @@
         private System.Windows.Forms.Button btnPos;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnStock;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnSuppliers;
         private System.Windows.Forms.Button btnExpenses;
         private System.Windows.Forms.Label lblDate;
