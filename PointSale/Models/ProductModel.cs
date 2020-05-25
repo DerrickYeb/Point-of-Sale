@@ -17,9 +17,9 @@ namespace PointSale.Models
 
         public decimal StockAmount { get; set; }
 
-        public Decimal SalePrice { get; set; }
+        public decimal SalePrice { get; set; }
 
-        public Decimal PurchasePrice { get; set; }
+        public decimal PurchasePrice { get; set; }
 
         public int PurchaseUnit { get; set; }
 
