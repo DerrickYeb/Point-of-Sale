@@ -205,5 +205,11 @@
   <ItemGroup>
     <Folder Include="ViewModel\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\data.poinOfSale\data.poinOfSale.csproj">
+      <Project>{84585422-e09d-4427-8b15-b6bb27b44afd}</Project>
+      <Name>data.poinOfSale</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
